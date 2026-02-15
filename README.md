@@ -87,8 +87,7 @@ fastapi-auth-system/
 │
 ├── main.py                 # FastAPI app initialization & middleware
 ├── auth.py                 # Authentication router with all routes
-├── requirements.txt        # Python dependencies
-├── .gitignore             # Git ignore rules
+├── requirements.txt        # Python dependencies          
 ├── README.md              # This file
 │
 └── templates/             # Jinja2 HTML templates
