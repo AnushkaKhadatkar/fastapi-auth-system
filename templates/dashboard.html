@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - ADS-SJSU{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body p-5 text-center">
+                    <h1 class="display-4 mb-4">
+                        👋 Welcome, {{ username }}!
+                    </h1>
+                    
+                    <div class="alert alert-success mb-5" role="alert">
+                        <strong>Success!</strong> You are now logged in to the ADS-SJSU portal.
+                    </div>
+                    
+                    <div class="d-grid gap-3 col-md-8 mx-auto">
+                        <a href="/" class="btn btn-primary btn-lg">
+                            <i class="me-2">🏠</i> Home
+                        </a>
+                        <a href="/logout" class="btn btn-danger btn-lg">
+                            <i class="me-2">🚪</i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

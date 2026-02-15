@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home - ADS-SJSU{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body text-center p-5">
+                    <h1 class="display-4 mb-4">
+                        🎓 Welcome to ADS-SJSU
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Department of Applied Data Science
+                    </p>
+                    <p class="mb-4">
+                        San José State University
+                    </p>
+                    
+                    {% if is_logged_in %}
+                        <div class="alert alert-success" role="alert">
+                            <strong>Welcome back, {{ username }}!</strong>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a href="/dashboard" class="btn btn-primary btn-lg me-2">
+                                Go to Dashboard
+                            </a>
+                            <a href="/logout" class="btn btn-outline-secondary btn-lg">
+                                Logout
+                            </a>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-info" role="alert">
+                            Please log in to access your dashboard
+                        </div>
+                        <a href="/login" class="btn btn-primary btn-lg">
+                            Login to Continue
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
