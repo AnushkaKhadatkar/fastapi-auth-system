@@ -9,6 +9,9 @@ A modern web authentication system built with FastAPI and Bootstrap for the Depa
 
 ## 📸 Screenshots
 
+### Home Page
+![Home Page](screenshots/home.png)
+
 ### Login Page
 ![Login Page](screenshots/login.png)
 
