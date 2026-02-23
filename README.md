@@ -1,4 +1,4 @@
-# 🔐 FastAPI Authentication System - ADS SJSU
+# 🔐 FastAPI Authentication System 
 
 A modern web authentication system built with FastAPI and Bootstrap for the Department of Applied Data Science at San José State University.
 
